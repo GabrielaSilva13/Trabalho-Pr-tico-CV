@@ -1,0 +1,197 @@
+Color Theme Swatches in Hex
+.Moda-1-hex { color: #F2F2F2; }
+.Moda-2-hex { color: #8C8C8C; }
+.Moda-3-hex { color: #595959; }
+.Moda-4-hex { color: #262626; }
+.Moda-5-hex { color: #0D0D0D; }
+
+
+
+
+
+
+/* Fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  
+  /* Cores */
+  :root {
+    --cor-principal: #595959;
+    --cor-secundaria: #595959;
+    --cor-destaque: #F2F2F2;
+  }
+  
+  /* Estilos Gerais */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--cor-principal);
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: var(--cor-principal);
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    a:hover {
+      color: #0D0D0D; /* Cor do link quando o mouse passa sobre ele */
+    }
+    
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* link de acesso direto */
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+  }
+  
+  /* Seções */
+  main {
+    margin-top: 5rem;
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h1, h2 {
+    color: var(--cor-principal);
+  }
+  
+  .apresentacao-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .apresentacao-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  
+  /* Container */
+  .educacao-container,
+  .certificacoes-container,
+  .experiencia-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  /* lista de habilidades */
+  .habilidades-lista {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .habilidades-lista li {
+    background-color: var(--cor-destaque);
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* lista com dois blocos */
+  .conhecimentos-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+  }
+
+  .conhecimentos-lista {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .conhecimentos-lista li {   
+    background-color: var(--cor-destaque);
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #595959;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    a:hover {
+      color: #0D0D0D; /* Cor do link quando o mouse passa sobre ele */
+    }
+    
+  }
+  
+  .links-lista {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .links-lista li {
+    margin: 0 1rem;
+  }
+  
+  .links-lista a {
+    color: #fff;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    header {
+      position: static;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav li {
+      margin: 0.5rem 0;
+    }
+  
+    .apresentacao-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .educacao-container,
+    .certificacoes-container,
+    .experiencia-container {
+      grid-template-columns: 1fr;
+    }
+  }
